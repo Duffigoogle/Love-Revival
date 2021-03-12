@@ -1,6 +1,9 @@
-import './App.css';
+import './App.scss';
+// import 'bootstrap/scss/bootstrap';
 import Navigation from './comp/Nav.js';
 import WelcomeMessage from './comp/WelcomeMess.js';
+import AboutLove from './comp/AboutLove.js';
+import WatchLoveRev from './comp/WatchLoveRev';
 
 function App() {
   return (
@@ -11,6 +14,8 @@ function App() {
       </header>
       <main>
         <WelcomeMessage />
+        <AboutLove />
+        <WatchLoveRev />
       </main>
     </div>
   );

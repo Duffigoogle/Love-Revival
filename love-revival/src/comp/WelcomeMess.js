@@ -5,7 +5,7 @@ function WelcomeMessage() {
         <div>
             <h1> Welcome Message</h1>
             <div>
-                <img src=''></img>
+                <img src='' alt=''></img>
             </div>
             <div>
                 <p> lorem text </p>
