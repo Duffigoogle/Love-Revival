@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import '../styles/watchlove.scss';
 
 function WatchLoveRev() {
     return (
-        <div>
-            <img src='' alt=''></img>
+        <div className='watchlove-section'>
+            <img src='love-revival\src\img\IMG_6930.png' alt='flute-img'></img>
             <video src=''></video>
-            <img src='' alt=''></img>
+            <img src='love-revival\src\img\IMG_7146.png' alt='praying-img'></img>
         </div>
     )
 }
