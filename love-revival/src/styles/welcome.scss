@@ -1,0 +1,21 @@
+.welcome-content {
+  padding: 50px 30px;
+  h1 {
+    text-align: center;
+  }
+  .welcome-message {
+    display: flex;
+    .welcome-img {
+      margin: 30px 50px;
+      width: 400px;
+      border: 1px solid;
+      border-radius: 180px;
+    }
+    .welcome-text {
+      margin: 80px 0px;
+      p {
+        padding-bottom: 20px;
+      }
+    }
+  }
+}

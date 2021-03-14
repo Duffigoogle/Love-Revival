@@ -13,6 +13,12 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Navigation />
+        <div className='header-text'>
+          <h2>WELCOME TO </h2>
+          <h1>LOVE REVIVAL</h1>
+          <button>Learn more</button>
+        </div>
+        
       
       </header>
       <main>

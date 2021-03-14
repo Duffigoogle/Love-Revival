@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/aboutLove.scss';
 
 function AboutLove() {
     return (

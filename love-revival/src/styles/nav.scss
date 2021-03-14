@@ -1,0 +1,24 @@
+.Nav-header {
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  .logo-header {
+    display: flex;
+    img {
+      height: 70px;
+    }
+    .nav-text {
+      .top-text {
+        color: pink;
+        span {
+          color: skyblue;
+        }
+      }
+      .bottom-text {
+        color: gray;
+      }
+    }
+  }
+}
