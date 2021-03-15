@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/welcome.scss';
+import welcomeImg from '../images/IMG_MAN1.png';
 
 function WelcomeMessage() {
     return (
@@ -7,7 +8,7 @@ function WelcomeMessage() {
             <h1> Welcome Message</h1>
             <div className='welcome-message'>
                 <div className='welcome-img welcome'>
-                    <img src='love-revival\src\img\IMG_MAN1.png' alt='welcome-img'></img>
+                    <img src={welcomeImg} alt='welcome-img'></img>
                 </div>
                 <div className='welcome-text welcome'>
                     <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tempor orci gravida dui tristique, eget

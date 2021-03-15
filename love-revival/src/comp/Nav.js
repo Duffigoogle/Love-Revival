@@ -2,6 +2,7 @@ import React from 'react';
 import './../styles/nav.scss';
 import Nav from 'react-bootstrap/Nav';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import companyLogo from '../images/LVF-Logo1-01.png';
 
 
 // function Navigation() {
@@ -21,7 +22,7 @@ function HeaderNav() {
     return (
       <div className='Nav-header'>
         <div className='logo-header'>
-          <img src='love-revival\src\img\LVF-Logo1-01.png' alt='logo'></img>
+          <img src={companyLogo} alt='logo'></img>
           <div className='nav-text'>
             <h5 className='top-text'>LOVE <span>VISION</span></h5>
             <h5 className='bottom-text'>FOUNDATION</h5>

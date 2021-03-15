@@ -1,5 +1,6 @@
 import React from 'react'
 import '../styles/aboutLove.scss';
+import aboutImg from '../images/IMG_6932.png';
 
 function AboutLove() {
     return (
@@ -21,7 +22,7 @@ function AboutLove() {
                     </p>
                 </div>
                 <div className='about-img about'>
-                    <img src='love-revival\src\img\IMG_7063.png' alt='about-img'></img>
+                    <img src={aboutImg} alt='about-img'></img>
                 </div>
             </section>
         </div>

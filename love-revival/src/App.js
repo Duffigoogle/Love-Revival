@@ -5,8 +5,8 @@ import WelcomeMessage from './comp/WelcomeMess.js';
 import AboutLove from './comp/AboutLove.js';
 import WatchLoveRev from './comp/WatchLoveRev';
 import PictureGallery from './comp/PictureGallery';
-import MediaComp from './comp/MediaComp';
 import Footer from './comp/Footer';
+import DottedBackg from './comp/DottedBackg';
 
 function App() {
   return (
@@ -25,8 +25,8 @@ function App() {
         <WelcomeMessage />
         <AboutLove />
         <WatchLoveRev />
+        <DottedBackg />
         <PictureGallery />
-        <MediaComp />
         <Footer />
       </main>
     </div>
