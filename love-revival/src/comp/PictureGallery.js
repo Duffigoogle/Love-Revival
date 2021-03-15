@@ -1,14 +1,15 @@
-import React from 'react'
-import DottedBackg from './DottedBackg'
-import MediaComp from './MediaComp'
+import React from 'react';
+import '../styles/picturegallery.scss';
+import CarouselComp from './CarouselComp';
+import DottedBackg from './DottedBackg';
+import MediaComp from './MediaComp';
+
 
 function PictureGallery() {
     return (
         <div>
             <h1> Picture Gallery </h1>
-            <div>
-                Carousel
-            </div>
+            <CarouselComp />
             <MediaComp />
             <DottedBackg />
         </div>
