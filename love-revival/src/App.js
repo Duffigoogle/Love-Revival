@@ -2,11 +2,9 @@ import './App.scss';
 // import 'bootstrap/scss/bootstrap';
 import Navigation from './comp/Nav.js';
 import WelcomeMessage from './comp/WelcomeMess.js';
-import AboutLove from './comp/AboutLove.js';
-import WatchLoveRev from './comp/WatchLoveRev';
 import PictureGallery from './comp/PictureGallery';
 import Footer from './comp/Footer';
-import DottedBackg from './comp/DottedBackg';
+import LoveSection from './comp/LoveSection';
 
 function App() {
   return (
@@ -23,9 +21,7 @@ function App() {
       </header>
       <main>
         <WelcomeMessage />
-        <AboutLove />
-        <WatchLoveRev />
-        <DottedBackg />
+        <LoveSection />
         <PictureGallery />
         <Footer />
       </main>

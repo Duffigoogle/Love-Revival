@@ -1,5 +1,8 @@
 import React from 'react'
 import Nav from './Nav';
+import { ImFacebook2 } from 'react-icons/im';
+import { FaInstagramSquare } from 'react-icons/fa';
+import {IconContext} from "react-icons";
 
 function Footer() {
     return (
@@ -11,10 +14,12 @@ function Footer() {
             </div>
             <div>
                 <p>Follow us:</p>
-                <div>
-                    <i>Facebook</i>
-                    <i>Instagram</i>
-                </div>
+                <IconContext.Provider value={{ color: 'blue', size: '30px' }}>
+                    <div>
+                        <ImFacebook2 />
+                        <FaInstagramSquare />
+                    </div>
+                </IconContext.Provider>
                
             </div>
             

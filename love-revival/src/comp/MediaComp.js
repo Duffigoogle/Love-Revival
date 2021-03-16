@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/mediacomp.scss'
+import { FaMicrophoneAlt, FaDesktop, FaYoutube } from 'react-icons/fa'
+import { SiYoutubetv } from 'react-icons/si'
 
 function MediaComp() {
     return (
@@ -7,7 +9,7 @@ function MediaComp() {
             
             <div className='left box'>
                 <div className='audio-sect'>
-                    Mic
+                    <FaMicrophoneAlt />
                 </div>
                 <div>
                     <p>Listen to our <br />
@@ -19,7 +21,9 @@ function MediaComp() {
 
             <div className='right box'>
                 <div className='video-sect'>
-                    Desktop
+                    <FaDesktop />
+                    <FaYoutube />
+                    <SiYoutubetv />
                 </div>
                 <div>
                     <p>Watch us on <br /> youtube</p>
