@@ -6,16 +6,35 @@
     // text-align: center;
     .App-header {
       background-image: url(./images/IMG_6932.png);
-      background-repeat: no-repeat;
+      background-size: 100%;
+      // background-repeat: repeat-x;
       color: white;
       height: 90vh;
-      .header-text {
-        width: 500px;
-        margin: 90px 60px;
-        font-size: 2rem;
+      .header-content {
+        width: 600px;
+        margin: 130px 100px;
         text-align: center;
-        button {
-          margin-top: 20px;
+        .header-text {
+          font-weight: 800;
+          line-height: 3.5rem;
+        }
+        .big {
+          font-size: 4rem;
+        }
+        .small {
+          font-size: 3.5rem;
+        }
+        .btn {
+          margin-top: 40px;
+          background: linear-gradient(
+            94.14deg,
+            #f30b0b -12.72%,
+            rgba(15, 11, 182, 0.92) 115.37%
+          );
+          border-radius: 10px;
+          width: 120px;
+          height: 40px;
+          color: white;
         }
       }
     }

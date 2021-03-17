@@ -11,10 +11,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <HeaderNav />
-        <div className='header-text'>
-          <h2>WELCOME TO </h2>
-          <h1>LOVE REVIVAL</h1>
-          <button>Learn more</button>
+        <div className='header-content'>
+          <h2 className='header-text small'>WELCOME TO </h2>
+          <h1 className='header-text big'>LOVE REVIVAL</h1>
+          <button className='btn'>Learn more</button>
         </div>
         
       </header>
