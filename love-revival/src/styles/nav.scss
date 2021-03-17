@@ -1,17 +1,25 @@
 .Nav-header {
-  background-color: #282c34;
+  // background-color:black;
+  background-image: linear-gradient(to right,
+  rgba(0, 0, 4, 0.652),
+  rgb(0, 0, 0) 50%);
   color: white;
   display: flex;
   justify-content: space-between;
+  height: 75px;
+  padding: 0 100px;
 
   .logo-header {
     display: flex;
+    align-items: center;
     img {
       height: 70px;
     }
     .nav-text {
+
       .top-text {
         color: pink;
+        
         span {
           color: skyblue;
         }
@@ -19,6 +27,18 @@
       .bottom-text {
         color: gray;
       }
+    }
+  }
+  .Full-Nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    #nav-dropdown {
+      margin-left: 10px;
+    }
+    button {
+      margin-left: 30px;
+      cursor: pointer;
     }
   }
 }

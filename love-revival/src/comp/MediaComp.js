@@ -1,17 +1,18 @@
 import React from 'react'
 import '../styles/mediacomp.scss'
-import { FaMicrophoneAlt, FaDesktop, FaYoutube } from 'react-icons/fa'
+import { FaMicrophoneAlt, } from 'react-icons/fa'
 import { SiYoutubetv } from 'react-icons/si'
 
 function MediaComp() {
+    let mediaStyles = { width: '160px', height: '160px'}
     return (
         <div className='media'>
             
-            <div className='left box'>
+            <div className='box left'>
                 <div className='audio-sect'>
-                    <FaMicrophoneAlt />
+                    <FaMicrophoneAlt style={mediaStyles} />
                 </div>
-                <div>
+                <div className='sub-box'>
                     <p>Listen to our <br />
                     live Podcast
                     </p>
@@ -19,13 +20,13 @@ function MediaComp() {
                 </div>
             </div>
 
-            <div className='right box'>
+            <div className='box right'>
                 <div className='video-sect'>
-                    <FaDesktop />
-                    <FaYoutube />
-                    <SiYoutubetv />
+                    {/* <FaDesktop />
+                    <FaYoutube /> */}
+                    <SiYoutubetv style={mediaStyles} />
                 </div>
-                <div>
+                <div className='sub-box'>
                     <p>Watch us on <br /> youtube</p>
                     <button>Click Here!</button>
                 </div>

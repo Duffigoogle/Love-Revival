@@ -2,7 +2,7 @@
     display: flex;
     background-color: blue;
     width: 1200px;
-    height: 250px;
+    height: 300px;
     margin: 40px auto;
     
     .box {
@@ -12,8 +12,26 @@
         justify-content: center;
         align-items: center;
         margin: 20px 0px;
+
+        .sub-box {
+            margin-left: 20px;
+            p {
+                font-size: 1.5rem;
+                font-weight: 800;
+            } 
+            button {
+                width: 120px;
+                margin-top: 10px;
+                height: 40px;
+                font-size: large;
+            }  
+        }
     }
+
     .left {
-     border-right: 4px solid white;   
+        border-right: 4px solid white;
     }
+
+    
+   
 }

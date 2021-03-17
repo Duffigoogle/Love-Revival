@@ -1,27 +1,35 @@
 import React from 'react'
-import Nav from './Nav';
+import HeaderNav from './Navbar';
 import { ImFacebook2 } from 'react-icons/im';
 import { FaInstagramSquare } from 'react-icons/fa';
 import {IconContext} from "react-icons";
+import '../styles/footer.scss';
 
 function Footer() {
+    let socialStyles = { 'margin-right': '10px' }; 
+    // let navStyles = { 'background-color': 'blue'};
     return (
-        <div>
-            <Nav />
+        <div className='footer'>
+            <HeaderNav />
             <hr />
-            <div>
-                <p>&copy; Love Vision Foundation, Inc. 2020, We love spreading love</p>
+            <div className='footer-bottom'>
+                <div>
+                    <p>&copy; Love Vision Foundation, Inc. 2020, We love spreading love</p>
+                </div>
+                <div className='footer-socials'>
+                    <p>Follow us:</p>
+                    
+                        <div className='socials'>
+                            <IconContext.Provider value={{ color: 'white', size: '30px' }}>
+                                <ImFacebook2 style={socialStyles}/>
+                                <FaInstagramSquare />
+                            </IconContext.Provider>
+                        </div>
+                    
+                
+                </div>
             </div>
-            <div>
-                <p>Follow us:</p>
-                <IconContext.Provider value={{ color: 'blue', size: '30px' }}>
-                    <div>
-                        <ImFacebook2 />
-                        <FaInstagramSquare />
-                    </div>
-                </IconContext.Provider>
-               
-            </div>
+            
             
            
         </div>
