@@ -1,11 +1,14 @@
 .Nav-header {
   // background-color:black;
-  background-image: linear-gradient(to right,
-  rgba(0, 0, 4, 0.652),
-  rgb(0, 0, 0) 50%);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 4, 0.652),
+    rgb(0, 0, 0) 50%
+  );
   color: white;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 75px;
   padding: 0 100px;
 
@@ -16,16 +19,20 @@
       height: 70px;
     }
     .nav-text {
-
+      margin-top: 10px;
       .top-text {
+        letter-spacing: 1px;
+        font-size: 1rem;
+        line-height: 0.5;
         color: pink;
-        
+
         span {
           color: skyblue;
         }
       }
       .bottom-text {
         color: gray;
+        font-size: 1rem;
       }
     }
   }
