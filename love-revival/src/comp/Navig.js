@@ -5,23 +5,30 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles/nav.scss';
 
 function Navig() {
-    let btnStyles = {
-        'border-radius': '10px',
-        'width': '100px',
-        'height': '35px',
-        'color': 'white',
-      };
+    // let btnStyles = {
+    //     'border-radius': '10px',
+    //     'width': '100px',
+    //     'height': '35px',
+    //     'color': 'white',
+    //   };
     const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
     return (
-    //     <style>
-    //     {
-    //       `.btn {
-    //           max-width: 100%;
-    //           height: 500px;
-    //           background: black;
-    //         }`
-    //     }
-    //   </style>
+        <div>
+       <style>
+        {
+          `.btn {
+                background: linear-gradient(
+                    94.14deg,
+                    #f30b0b -12.72%,
+                    rgba(15, 11, 182, 0.92) 115.37%
+                );
+                border-radius: 30px;
+                width: 100px;
+                height: 35px;
+                color: white;
+        }`
+           }
+       </style>
             <Nav className="Full-Nav" variant="pills" activeKey="1" onSelect={handleSelect}>
                 <Nav.Item>
                     <Nav.Link eventKey="1" href="#/home">
@@ -45,8 +52,9 @@ function Navig() {
                     <NavDropdown.Divider />
                     <NavDropdown.Item eventKey="4.3">Donations</NavDropdown.Item>
                 </NavDropdown>
-                <button className='btn' >Connect</button>
+                <button className='btn'>Connect</button>
             </Nav>
+        </div>
     )
 }
 
