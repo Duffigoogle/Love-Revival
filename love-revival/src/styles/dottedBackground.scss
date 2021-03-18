@@ -1,10 +1,11 @@
-.dotted {   
-    text-align: center;
-    
-    img {
-        z-index: -14;
-        width: 1150px;
-        margin-top: -250px;
-        margin-bottom: -140px;
-    }
+.dotted {
+  text-align: center;
+  position: relative;
+  z-index: -1;
+
+  img {
+    width: 1200px;
+    margin-top: -250px;
+    margin-bottom: -140px;
+  }
 }

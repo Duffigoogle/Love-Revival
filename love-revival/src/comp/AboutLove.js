@@ -1,11 +1,13 @@
 import React from 'react'
 import '../styles/aboutLove.scss';
 import aboutImg from '../images/IMG_6932.png';
+import {BsDash} from 'react-icons/bs';
+
 
 function AboutLove() {
     return (
         <div className='about-section'>
-            <h1> About Love Revival </h1>
+            <h3><BsDash/>About Love Revival<BsDash/></h3>
             <section className='about-content'>
                 <div className='about-text about'>
                     <p> This arm focuses on spiritual awakening of the love of God in the

@@ -1,20 +1,24 @@
 .footer {
-    background-color: blue;
-    padding: 0px 10px;
-    color: white;
-    height: 230px;
-    z-index: 10;
+  background-color: blue;
+  padding: 0px 15px;
+  color: white;
+  height: 180px;
+  position: relative;
 
-    .footer-bottom {
-        display: flex;
-        justify-content: space-between;
-        padding: 35px 100px;
+  .footer-bottom {
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 95px;
+    margin-top: 10px;
 
-        .footer-socials {
-            display: flex;
-            .socials {
-                margin-left: 10px;
-            }
-        }
+    .footer-socials {
+      display: flex;
+      .socials {
+        margin-left: 10px;
+      }
     }
+  }
 }
