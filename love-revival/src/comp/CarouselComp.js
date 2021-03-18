@@ -1,11 +1,13 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Carousel from 'react-elastic-carousel';
 import carouselImg1 from '../images/IMG_8753.png';
 import carouselImg2 from '../images/IMG_8708.png';
 import carouselImg3 from '../images/IMG_8733.png';
 
 function CarouselComp() {
     let carouselStyes = { width: '1000px', margin: '20px auto', border: '1px solid red'}
+    
     return (
         <div style={carouselStyes}>
             <Carousel fade>
