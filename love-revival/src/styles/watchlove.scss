@@ -1,6 +1,16 @@
-
 .watchlove-section {
-    width: 1200px;
-    margin: auto;
-    display: flex;
+  width: 1200px;
+  height: 400px;
+  margin: 35px auto;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  .watch-love-img {
+    height: 400px;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
 }

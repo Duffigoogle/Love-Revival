@@ -16,7 +16,7 @@ function MediaComp() {
                     <p>Listen to our <br />
                     live Podcast
                     </p>
-                    <button>Click Here!</button>
+                    <button className='btn'>Click Here!</button>
                 </div>
             </div>
 
@@ -28,7 +28,7 @@ function MediaComp() {
                 </div>
                 <div className='sub-box'>
                     <p>Watch us on <br /> youtube</p>
-                    <button>Click Here!</button>
+                    <button className='btn'>Click Here!</button>
                 </div>
             </div>
         </div>

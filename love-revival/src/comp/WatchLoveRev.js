@@ -12,10 +12,16 @@ import Video from '../comp/Video';
 function WatchLoveRev() {
     return (
         <div className='watchlove-section'>
-            <img src={blowingFlutePic} alt='flute-img'></img>
+            <div className='watch-love-img'>
+                <img src={blowingFlutePic} alt='flute-img'></img>
+            </div>
+            
             {/* <video src={worshipVideo} width="500" height="500" controls="controls" playsInline muted autoplay="true"  /> */}
-            <Video />        
-            <img src={prayingPic} alt='praying-img'></img>
+            <Video />  
+            <div className='watch-love-img'>
+                <img src={prayingPic} alt='praying-img'></img>
+            </div>      
+            
             
         </div>
     )

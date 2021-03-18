@@ -5,7 +5,7 @@ import { CgPlayButtonO } from 'react-icons/cg';
 import '../styles/video.scss';
 
 function Video() {
-    let iconStyles = { color: "red", fontSize: "2em", width: '150px', height: '150px' };
+    let iconStyles = { color: "red", fontSize: "2em", width: '100px', height: '100px', 'z-index': '11' };
     // let wrapperStyles = { width: '500px', height:'600px'};
     return (
         <div className='player-wrapper'>
