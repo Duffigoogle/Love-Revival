@@ -6,7 +6,26 @@ export  default styled.div`
     align-items: center;
     height: 300px;
     width: 100%;
-    background-color: red;
     color: #fff;
-    margin: 0 15px;
-`
+    margin: 15px;
+    backgound-image: url(${props => props.imgUrl});
+    font-size: 4em;
+
+`;
+
+// export default styled.img`
+//     max-width: 100%;
+//     max-height: 100%
+//     display: block;
+// `;
+
+// export default styled.largebox`
+//     width: 250px;
+//     height: 500px;
+     
+// `;
+
+// export default styled.smallbox`
+//     width: 20px;
+//     height: 300px;
+// `;

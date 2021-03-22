@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import Carousel from 'react-elastic-carousel';
 import carouselImg1 from '../images/IMG_8753.png';
 import carouselImg2 from '../images/IMG_8708.png';
 import carouselImg3 from '../images/IMG_8733.png';
