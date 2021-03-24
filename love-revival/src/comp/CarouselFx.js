@@ -11,27 +11,43 @@ import carouselImg5 from '../images/IMG_6932.png';
 import carouselImg6 from '../images/IMG_6930.png';
 import carouselImg7 from '../images/IMG_6979.png';
 import carouselImg8 from '../images/IMG_6983.png';
+import carouselImg9 from '../images/IMG_7146.png';
 
-const Wrapper = styled.div`
+const LargeWrapper = styled.div`
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    height: 400px;
+    width: 100%;
+    margin: 10px;
+    background-color: red;
+    backgound-image: url(${(props) => props.bg});
+    background-size: cover;
+    // background-repeat: no-repeat;
+    object-fit: contain;
+`;
+
+const SmallWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    // align-items: center;
     height: 300px;
     width: 100%;
-    margin: 5px;
+    margin: 10px;
     background-color: red;
-    color: #fff;
-    font-size: 4em;
-    backgound-image: url(${props => props.img});
+    backgound-image: url(${(props) => props.bg});
     background-size: cover;
-    background-repeat: no-repeat;
+    // background-repeat: no-repeat;
+    object-fit: cover;
 `;
 
 const Image = styled.img`
-    max-width: 300px;
-    max-height: 500px;
+    max-width: 80%;
+    max-height: 100%;
+    // margin: 15px;
+    // width: 100%;
     display: block;
-    margin: 15px;
+
 `;
 
 // const Largebox = styled.div`
@@ -58,7 +74,7 @@ function CarouselFx() {
     //  let divStyles = { display: 'flex', overflow: 'hidden', height: '250px',
     //  width: '300px', margin: '15px'};
      let divvStyle = {'font-family': 'sans-serif',
-        display: 'flex', 'align-items': 'center', 'justify-content': 'center', height: '100vh'};
+        display: 'flex', 'align-items': 'center', 'justify-content': 'center', 'height': '100vh'};
     // state = {
     //     items: [
     //       {id: 1, alt: 'image1', url: {carouselImg1}},
@@ -79,26 +95,37 @@ function CarouselFx() {
             </Carousel> */}
             <div style={divvStyle}>
                 <Carousel breakPoints={breakPoints}>
-                    <Wrapper>1</Wrapper>
-                    <Wrapper>2</Wrapper>
-                    <Wrapper>3</Wrapper>
-                    <Wrapper>4</Wrapper>
-                    <Wrapper>5</Wrapper>
-                    <Wrapper>6</Wrapper>
-                    <Wrapper>7</Wrapper>
-                    <Wrapper>8</Wrapper>
+                    <SmallWrapper>1</SmallWrapper>
+                    <LargeWrapper>2</LargeWrapper>
+                    <SmallWrapper>3</SmallWrapper>
+                    <SmallWrapper>4</SmallWrapper>
+                    <LargeWrapper>5</LargeWrapper>
+                    <SmallWrapper>6</SmallWrapper>
+                    <SmallWrapper>7</SmallWrapper>
+                    <LargeWrapper>8</LargeWrapper>
                 </Carousel>
             </div>
             <div style={divvStyle}>
-                <Carousel itemsToScroll={1} itemsToShow={3}>
-                    <Wrapper img={carouselImg1}/>
+                <Carousel className='carousel_box' itemsToScroll={3} itemsToShow={3}>
+                    <SmallWrapper><Image src={carouselImg1}/></SmallWrapper>
+                    <LargeWrapper><Image src={carouselImg2}/></LargeWrapper>
+                    <SmallWrapper><Image src={carouselImg3}/></SmallWrapper>
+
+                    <SmallWrapper><Image src={carouselImg4}/></SmallWrapper>
+                    <LargeWrapper><Image src={carouselImg5}/></LargeWrapper>
+                    <SmallWrapper><Image src={carouselImg6}/></SmallWrapper>
+
+                    <SmallWrapper><Image src={carouselImg7}/></SmallWrapper>
+                    <LargeWrapper><Image src={carouselImg8}/></LargeWrapper>
+                    <SmallWrapper><Image src={carouselImg9}/></SmallWrapper>
+                    {/* <Wrapper img={carouselImg1}></Wrapper>
                     <Wrapper img={carouselImg2}/>
                     <Wrapper img={carouselImg3}/>
                     <Wrapper img={carouselImg4}/>
                     <Wrapper img={carouselImg5}/>
                     <Wrapper img={carouselImg6}/>
                     <Wrapper img={carouselImg7}/>
-                    <Wrapper img={carouselImg8}/>
+                    <Wrapper img={carouselImg8}/> */}
                 </Carousel>
             </div>
             <div style={divvStyle}>
@@ -113,7 +140,19 @@ function CarouselFx() {
                         <Image src={carouselImg8}/>
                 </Carousel>
             </div>
-            
+            <div style={divvStyle}>
+                <Carousel breakPoints={breakPoints} itemsToScroll={3} itemsToShow={3}>
+                    <SmallWrapper style={{background: `url(${carouselImg1})`, objectFit: 'contain'}}/>
+                    <LargeWrapper style={{background: `url(${carouselImg6})`, backgroundSize: '70% 100%', backgroundRepeat: 'auto'}}/>
+                    <SmallWrapper style={{background: `url(${carouselImg3})`, 'background-size': 'cover', backgroundRepeat: 'no-repeat'}}/>
+                    <SmallWrapper style={{background: `url(${carouselImg4})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}/>
+                    <LargeWrapper style={{background: `url(${carouselImg5})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}/>
+                    <SmallWrapper style={{background: `url(${carouselImg2})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}/>
+                    <SmallWrapper style={{background: `url(${carouselImg7})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}/>
+                    <LargeWrapper style={{background: `url(${carouselImg8})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}/>
+                    <SmallWrapper style={{background: `url(${carouselImg9})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat'}}/>
+                </Carousel>
+            </div>
             
         </>
     )
