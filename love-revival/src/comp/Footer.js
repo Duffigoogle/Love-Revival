@@ -8,10 +8,10 @@ import '../styles/footer.scss';
 function Footer() {
     let socialStyles = { 'margin-right': '10px' }; 
 
-    // let navStyles = { 'background-color': 'blue'};
+    let footerStyles = { backgroundColor: '#2d3fa2', backgroundImage: 'none', color: '#ffff'};
     return (
         <div className='footer'>
-            <HeaderNav style={{'background-color': "red"}}/>
+            <HeaderNav style={footerStyles}/>
             <div className='footer-bottom'>
                 <div>
                     <p>&copy; Love Vision Foundation, Inc. 2020, We love spreading love</p>
